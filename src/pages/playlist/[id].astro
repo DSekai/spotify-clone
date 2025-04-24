@@ -5,6 +5,8 @@ import PlayListItemCard from '../../components/PlayListItemCard.astro'
 import MusicTable from '../../components/MusicTable.astro'
 import { CardPlayButton } from '../../components/CardPlayButton'
 
+export const prerender = false
+
 const { id } = Astro.params
 
 const playlist = allPlaylists.find((playlist) => playlist.id === id)
